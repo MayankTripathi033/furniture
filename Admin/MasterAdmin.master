@@ -1,0 +1,228 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterAdmin.master.cs" Inherits="Admin_MasterAdmin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin Panel</title>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<meta name="keywords" content="Best Look Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smart phone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="Colorlib Templates"/>
+    <meta name="author" content="Colorlib"/>
+    <meta name="keywords" content="Colorlib Templates"/>
+		
+		
+		
+<!-- //custom-theme -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/JiSlider.css" rel="stylesheet"/> 
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet"/> 
+<!-- //font-awesome-icons -->
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"/>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'/> 
+
+     <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"/>
+
+    
+</head>
+
+<body>
+<form id="form1" runat="server">
+
+<!-- header -->
+<div class="banner-top" id="home">
+	<div class="header">
+	    <div class="container">
+			<div class="header-left">
+                <img src="../img1/admin.PNG" height="100px" width="150px" /><br />
+                <asp:Button ID="Button1" runat="server" Text="Logout" BackColor="#00CC00" 
+                        Font-Bold="True" Font-Size="Medium" Font-Underline="True" Width="150px" 
+                        onclick="Button1_Click" />				
+				<div class="search-grid">
+                    
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			
+		</div>	
+	</div>
+
+	<div class="w3_navigation">
+		<div class="container">
+			<nav class="navbar navbar-default">
+					
+								
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--iris">
+						<ul class="nav navbar-nav menu__list">
+						    <li class="menu__item"><a href="Homeadmin.aspx" class="menu__link">HOME</a></li>
+						    <li class="dropdown menu__item">
+								<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">PRODUCT MANU<b class="caret"></b></a>
+								<ul class="dropdown-menu agile_short_dropdown">
+									<li><a href="viewproduct.aspx">VIEW PRODUCT</a></li>
+									<li><a href="addproduct.aspx">ADD PRODUCT</a></li>
+									<li><a href="suggestions.aspx">SUGGESTIONS</a></li>
+								</ul>
+							</li>
+						    <li class="menu__item"><a href="customare.aspx" class="menu__link">CUSTOMERS</a></li>
+						    <li class="menu__item"><a href="EditItem.aspx" class="menu__link">EDITITEM </a></li>
+						    <li class="menu__item"><a href="orderdata.aspx" class="menu__link">ORDER DETAILS</a></li>
+						    <li class="menu__item"><a href="adminchangepass.aspx" class="menu__link">CHANGE PASSWORD</a></li>
+						    
+							
+	
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>
+</div>
+<!-- //header -->
+
+
+
+<!-- Containt Page-->
+    <div>
+        <asp:ContentPlaceHolder  id="ContentPlaceHolder1" runat="server">
+        
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    
+<!--//Containt Page-->
+
+<!-- footer -->
+<div class="w3l_footer">
+		<div class="container">
+				<div class="w3ls_footer_grid">
+					<div class="col-md-4 w3ls_footer_grid_left">
+							
+					</div>
+					<div class="col-md-4 w3ls_footer_grid_left">
+							<h4>LOCATION</h4>
+							<p>Mahuva City</p>
+							<p>Gujrat</p>
+					</div>
+					<div class="col-md-4 w3ls_footer_grid_left">
+							<h4></h4>
+							<p> </p>
+							
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<!-- footer-button-info -->
+				<div class="footer-middle-agileinfo">
+					<div class="footer-button">
+					<div class="button-top-w3layouts">
+						<div class="logo-icons-w3ls">
+							<img src="images/f2.png" alt="img">
+						</div>
+					</div>
+						
+						<h2>Thank you for the visit.</h2>
+					</div>
+				</div>
+				<!-- footer-button-info -->
+		</div>
+</div>
+<!-- footer -->
+
+
+<div class="copy-right wow fadeInLeft animated" data-wow-delay=".5s">
+	<div class="container">
+			<p> &copy; 2019 Almos Furniture .  | Design by  <a >jayesh & sufiyan</a></p>
+	</div>
+</div>
+<!-- //footer -->
+
+<!-- js -->
+<script src="js/jquery-2.1.4.min.js" type="text/javascript"></script> 
+<script src="js/JiSlider.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(window).load(function () {
+				$('#JiSlider').JiSlider({color: '#fff', start: 3, reverse: false}).addClass('ff')
+			})
+		</script>
+<!-- carousal -->
+	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).on('ready', function() {
+		  $(".center").slick({
+			dots: true,
+			infinite: true,
+			centerMode: true,
+			slidesToShow: 2,
+			slidesToScroll: 2,
+			responsive: [
+				{
+				  breakpoint: 768,
+				  settings: {
+					arrows: true,
+					centerMode: false,
+					slidesToShow: 2
+				  }
+				},
+				{
+				  breakpoint: 480,
+				  settings: {
+					arrows: true,
+					centerMode: false,
+					centerPadding: '40px',
+					slidesToShow: 1
+				  }
+				}
+			 ]
+		  });
+		});
+	</script>
+<!-- //carousal -->
+	<script src="js/SmoothScroll.min.js" type="text/javascript"></script>
+<!-- start-smoth-scrolling -->
+<!-- //for bootstrap working -->
+
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smooth-scrolling -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+
+<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+
+<!--login-->
+<script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js' type="text/javascript"></script>
+
+
+  <!-- Main JS-->
+    <script src="js/global.js" type="text/javascript"></script>
+ 
+ 
+</form>
+</body>
+</html>
